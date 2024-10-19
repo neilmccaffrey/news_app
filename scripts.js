@@ -6,7 +6,6 @@ async function fetchNews() {
       const response = await fetch(url);
       const data = await response.json();
       console.log(data);
-      // TODO: Add a function call to display the news
       displayNews(data.articles);
     } catch (error) {
       console.error('There was an error!', error);
