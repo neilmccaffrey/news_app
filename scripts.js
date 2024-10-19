@@ -16,6 +16,7 @@ async function fetchNews() {
     const newsDiv = document.querySelector('#news');
     for (const article of articles) {
         const articleDiv = document.createElement('div');
+        articleDiv.classList.add('article');  // Add the 'article' class for styling
 
         //create and append a headline to the articleDiv
         const title = document.createElement('h4');
