@@ -1,0 +1,68 @@
+/* Styles for the news container */
+#news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  /* Styles for individual article cards */
+  .article {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .article:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .article h3 {
+    font-size: 1.25rem;
+    margin: 15px 20px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .article p {
+    font-size: 1rem;
+    margin: 0 20px 15px;
+    color: #555;
+  }
+  
+  .article a {
+    display: block;
+    margin: 15px 20px;
+    font-size: 1rem;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .article a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    #news {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .article {
+      max-width: 100%;
+    }
+  }
